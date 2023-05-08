@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+
+
+
+
+
+</head>
+<style>
+#map {
+  height: 100%;
+}
+#pano {
+
+  height: 630px;
+  width: 50%;
+}
+#box {
+display: flex;
+height:100%;
+width:100%;
+}
+
+#viewtext {
+font-size: 30px;
+position: absolute;
+z-index: 2;
+left:20px;
+background-color:rgba(191, 191, 191, 0.5);
+}
+#button {
+position: absolute;
+font-size: 25px;
+height: 50px;
+width: 100px;
+left: 46.5%;
+top:5%;
+z-index: 3;
+opacity: 0.75;
+}
+#viewtimer {
+font-size: 30px;
+position: absolute;
+z-index: 2;
+left: 48%;
+top:125px;
+background-color:rgba(191, 191, 191, 0.5);
+}
+#viewscoreHighest {
+font-size: 30px;
+position: absolute;
+z-index: 2;
+left:20px;
+top:50px;
+background-color:rgba(191, 191, 191, 0.5);
+
+
+
+}
+
+</style>
+<body>
+<div id="app">
+<p id="viewtext">{{ messages }}</p>
+<p id="viewscoreHighest">{{ scorehigh }}</p>
+<p id="viewtimer">{{ timer }}</p>
+<button v-on:click="Guess" id="button">Submit</button>
+<div id="box">
+
+<div id="map" style="width:50%;height:630px;"></div>
+<div id="pano"></div>
+</div>
+
+</div>
+<script src="https://cdn.jsdelivr.net/npm/vue@2.7.14/dist/vue.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="vuemapsjs(1).js"></script>
+    <script 
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&libraries=&v=weekly"
+      async
+    ></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+</body>
+</html>
