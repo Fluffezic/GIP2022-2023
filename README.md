@@ -17,6 +17,7 @@ run application.java within "SpringBootHelloWorld."
 
 step 3:
 Open "vuemapshtml(1).html" in your browser.
+
 --------------------------------------------------------------------------
 If you did everything correctly, you will now be able to play the game.
 
